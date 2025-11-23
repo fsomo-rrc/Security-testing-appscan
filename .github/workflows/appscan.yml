@@ -2,6 +2,8 @@ name: "AppScan CodeSweep"
 on:
   pull_request:
     branches: [ main ]
+    paths:
+      - '**/*.py'
 jobs:
   scan:
     runs-on: ubuntu-latest
